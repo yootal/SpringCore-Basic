@@ -1,7 +1,5 @@
-package core.basic.beanFind;
+package core.basic.beanfind;
 
-import core.basic.AppConfig;
-import core.basic.discount.DiscountPolicy;
 import core.basic.member.MemberRepository;
 import core.basic.member.MemoryMemberRepository;
 import org.junit.jupiter.api.DisplayName;

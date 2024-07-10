@@ -9,15 +9,14 @@ import org.springframework.stereotype.Component;
 @Component
 //@Primary
 @MainDiscountPolicy
-public class RateDiscountPolicy implements DiscountPolicy{
+public class RateDiscountPolicy implements DiscountPolicy {
     private int discountPercent = 10;
 
     @Override
     public int discount(Member member, int price) {
-        if(member.getGrade() == Grade.VIP){
+        if (member.getGrade() == Grade.VIP) {
             return price * discountPercent / 100;
-        }
-        else{
+        } else {
             return 0;
         }
     }

@@ -14,10 +14,10 @@ public class AutowiredTest {
     @Test
     void AutowiredOption() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(TestBean.class);
-
     }
 
     static class TestBean {
+
         //호출 안됨
         @Autowired(required = false)
         public void setNoBean1(Member member) {

@@ -1,4 +1,4 @@
-package core.basic.beanDefinition;
+package core.basic.beandefinition;
 
 import core.basic.AppConfig;
 import org.junit.jupiter.api.DisplayName;
@@ -16,11 +16,9 @@ public class BeanDefinitionTest {
     void findApplicationBean() {
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
         for (String beanDefinitionName : beanDefinitionNames) {
-            BeanDefinition beanDefinition =
-                    ac.getBeanDefinition(beanDefinitionName);
+            BeanDefinition beanDefinition = ac.getBeanDefinition(beanDefinitionName);
             if (beanDefinition.getRole() == BeanDefinition.ROLE_APPLICATION) {
-                System.out.println("beanDefinitionName" + beanDefinitionName +
-                        " beanDefinition = " + beanDefinition);
+                System.out.println("beanDefinitionName" + beanDefinitionName + " beanDefinition = " + beanDefinition);
             }
         }
     }

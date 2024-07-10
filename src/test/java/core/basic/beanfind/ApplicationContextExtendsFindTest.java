@@ -1,6 +1,5 @@
-package core.basic.beanFind;
+package core.basic.beanfind;
 
-import core.basic.AppConfig;
 import core.basic.discount.DiscountPolicy;
 import core.basic.discount.FixDiscountPolicy;
 import core.basic.discount.RateDiscountPolicy;

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequiredArgsConstructor
 public class LogDemoController {
     private final LogDemoService logDemoService;
-        private final MyLogger myLogger;
+    private final MyLogger myLogger;
 //    private final ObjectProvider<MyLogger> myLoggerProvider;
 
     @RequestMapping("log-demo")

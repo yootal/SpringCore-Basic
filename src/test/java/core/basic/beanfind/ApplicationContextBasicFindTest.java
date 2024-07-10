@@ -1,9 +1,8 @@
-package core.basic.beanFind;
+package core.basic.beanfind;
 
 import core.basic.AppConfig;
 import core.basic.member.MemberService;
 import core.basic.member.MemberServiceImpl;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
@@ -41,7 +40,6 @@ public class ApplicationContextBasicFindTest {
     @DisplayName("빈 이름으로 조회X")
     void findBeanByNameX() {
 //        MemberService XXXXX = ac.getBean("XXXXX", MemberService.class);
-        assertThrows(NoSuchBeanDefinitionException.class,
-                () -> ac.getBean("XXXXX", MemberService.class));
+        assertThrows(NoSuchBeanDefinitionException.class, () -> ac.getBean("XXXXX", MemberService.class));
     }
 }
